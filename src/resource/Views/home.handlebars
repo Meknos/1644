@@ -1,0 +1,20 @@
+<div class="mt-4">
+    <div class="row">
+
+        {{#each toys}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card card-toys-item">
+            <img src="{{this.image}}" class="card-img-top" alt="{{this.image}}">
+            <div class="card-body">
+                <h5 class="card-title">{{this.name}}</h5>
+                <p class="card-text"><h5>Price: {{this.price}}</h5></p>
+                <p class="card-text"><h5>Quantity: {{this.quantity}}</h5></p>
+                <p class="card-text">{{this.description}}</p>
+                <a href="#" class="btn btn-primary">View</a>
+            </div>
+            </div>
+        </div>
+        {{/each}}
+
+    </div>
+</div>
