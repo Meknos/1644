@@ -1,0 +1,36 @@
+<div class="mt-4">
+    <h3>Edit Toy</h3>
+
+<form method="POST" action="/toys/{{toy._id}}?_method=PUT">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" class="form-control" value="{{toy.name}}" >
+    </div>
+
+        <div class="form-group">
+        <label for="name">Descripton</label>
+        <textarea id="description" name="description" class="form-control" >{{toy.description}}</textarea>
+    </div>
+
+        <div class="form-group">
+        <label for="name">Price</label>
+        <input type="text" id="price" name="price" class="form-control"value="{{toy.price}}">
+    </div>
+
+        <div class="form-group">
+        <label for="name">Quantity</label>
+        <input type="text" id="quantity" name="quantity" class="form-control" value="{{toy.quantity}}">
+
+    </div>
+
+        <div class="form-group">
+        <label for="name">Link Image</label>
+        <input type="text" id="image" name="image" class="form-control" value="{{toy.image}}">
+
+    <button type="submit" class="btn btn-primary" > Save</button>
+
+</form>
+
+
+
+</div>
